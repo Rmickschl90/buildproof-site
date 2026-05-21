@@ -24,6 +24,28 @@ This is considered current safe landing-page baseline.
 
 # MAJOR SITE CHANGES
 
+## Stripe Success / Cancel Pages Added
+
+Added:
+
+- `app/success/page.tsx`
+- `app/cancel/page.tsx`
+
+Purpose:
+
+- complete post-checkout flow
+- give paid users an immediate next step
+- route users into the existing BuildProof app onboarding flow
+- avoid manual onboarding delay after payment
+
+Current result:
+
+Landing Page
+→ Stripe Checkout
+→ Success Page
+→ Open BuildProof
+→ in-app onboarding
+
 ## Screenshot Direction Shift
 Original generic screenshots were removed.
 

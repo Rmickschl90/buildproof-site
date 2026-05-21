@@ -162,6 +162,33 @@ NOT:
 Reason:
 First impression and momentum matter heavily after payment.
 
+## Stripe Success / Cancel Flow
+
+Added V1 checkout completion routes:
+
+- `/success`
+- `/cancel`
+
+Current payment flow:
+
+Landing Page
+→ Stripe Checkout
+→ Success Page
+→ Open BuildProof
+→ existing in-app onboarding wizard
+
+Current app link on success page:
+
+https://buildproof-kappa.vercel.app
+
+This is temporary until final domain structure is connected.
+
+Future target:
+
+buildproof.app → marketing site  
+app.buildproof.app → production app  
+staging.buildproof.app → staging/testing app
+
 ---
 
 # Existing App Onboarding
