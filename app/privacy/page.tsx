@@ -6,7 +6,7 @@ export default function PrivacyPolicy() {
       <p>Last updated: 2026</p>
 
       <p>
-        BuildProof helps users organize project timelines, approvals, photos,
+        Leeward helps users organize project timelines, approvals, photos,
         PDFs, attachments, notes, client information, shared updates, and exportable
         project records.
       </p>
@@ -20,7 +20,7 @@ export default function PrivacyPolicy() {
 
       <h2>How we use information</h2>
       <p>
-        We use information to provide the BuildProof service, maintain project
+        We use information to provide the Leeward service, maintain project
         records, support approvals, generate exports, deliver updates, improve
         reliability, troubleshoot issues, and support users.
       </p>
@@ -33,14 +33,14 @@ export default function PrivacyPolicy() {
 
       <h2>Sharing</h2>
       <p>
-        BuildProof may allow users to share project timelines, updates, snapshots,
+        Leeward may allow users to share project timelines, updates, snapshots,
         and exports with clients or other intended recipients. Users are responsible
         for choosing what they share and with whom.
       </p>
 
       <h2>Service providers</h2>
       <p>
-        BuildProof may use third-party services for hosting, authentication,
+        Leeward may use third-party services for hosting, authentication,
         storage, email delivery, analytics, and related infrastructure.
       </p>
 

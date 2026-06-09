@@ -5,10 +5,10 @@ export default function Home() {
     <main className="bp-page">
       <header className="bp-header">
         <div className="bp-container bp-header-inner">
-          <a href="/" className="bp-logo-link" aria-label="BuildProof home">
+          <a href="/" className="bp-logo-link" aria-label="Leeward home">
             <img
-              src="/buildproof-logo.png"
-              alt="BuildProof"
+              src="/leeward-logo.png"
+              alt="Leeward"
               style={{
                 width: "264px",
                 height: "auto",
@@ -32,7 +32,7 @@ export default function Home() {
           </h1>
 
           <p className="bp-subhead">
-            BuildProof organizes timelines, approvals, photos, exports, and
+            Leeward organizes timelines, approvals, photos, exports, and
             project updates into one structured record with shareable history and
             accountability built in.
           </p>
@@ -73,7 +73,7 @@ export default function Home() {
           >
             <img
               src="/hero-timeline.png"
-              alt="BuildProof approval workflow"
+              alt="Leeward approval workflow"
               style={{
                 width: "280px",
                 maxWidth: "80vw",
@@ -96,7 +96,7 @@ export default function Home() {
           </h2>
 
           <p className="bp-share-text">
-            BuildProof keeps approvals, updates, photos, and finalized records
+            Leeward keeps approvals, updates, photos, and finalized records
             organized in chronological order — giving clients a professional way
             to follow project progress without editing access.
           </p>
@@ -112,7 +112,7 @@ export default function Home() {
           >
             <img
               src="/share-timeline.png"
-              alt="BuildProof share timeline"
+              alt="Leeward share timeline"
               style={{
                 width: "280px",
                 maxWidth: "80vw",
@@ -135,7 +135,7 @@ export default function Home() {
           </h2>
 
           <p className="bp-share-text">
-            BuildProof preserves timeline records, approvals, delivery history,
+            Leeward preserves timeline records, approvals, delivery history,
             view activity, and project details so important records are easier
             to reference when accountability matters.
           </p>
@@ -151,8 +151,8 @@ export default function Home() {
             }}
           >
             <img
-              src="/timeline-records.png"
-              alt="BuildProof timeline records"
+              src="/timeline-records-leeward.png"
+              alt="Leeward timeline records"
               style={{
                 width: "280px",
                 maxWidth: "80vw",
@@ -164,8 +164,8 @@ export default function Home() {
             />
 
             <img
-              src="/approval-delivery-records.png"
-              alt="BuildProof approval and delivery records"
+              src="/approval-delivery-records-leeward.png"
+              alt="Leeward approval and delivery records"
               style={{
                 width: "280px",
                 maxWidth: "80vw",
@@ -271,7 +271,7 @@ export default function Home() {
           </h2>
 
           <p className="bp-share-text">
-            One plan. Full access to BuildProof’s documentation workflow,
+            One plan. Full access to Leeward’s documentation workflow,
             approvals, exports, offline capability, and client-facing project
             timelines.
           </p>
@@ -295,7 +295,7 @@ export default function Home() {
                 letterSpacing: "-0.02em",
               }}
             >
-              BuildProof
+              Leeward
             </p>
 
             <div
@@ -375,7 +375,7 @@ export default function Home() {
 
       <footer className="bp-footer">
         <div className="bp-container bp-footer-inner">
-          <p>BuildProof © 2026</p>
+          <p>Leeward © 2026</p>
 
           <div>
             <a href="/privacy">Privacy</a>

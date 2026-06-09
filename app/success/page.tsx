@@ -17,7 +17,7 @@ export default function SuccessPage() {
           letterSpacing: "0.08em",
         }}
       >
-        BuildProof
+        Leeward
       </p>
 
       <h1
@@ -32,7 +32,7 @@ export default function SuccessPage() {
       </h1>
 
       <p style={{ fontSize: 20, color: "#475569" }}>
-        Your BuildProof checkout is complete. Open the app below to sign in and
+        Your Leeward checkout is complete. Open the app below to sign in and
         begin your first project.
       </p>
 
@@ -54,7 +54,7 @@ export default function SuccessPage() {
           textDecoration: "none",
         }}
       >
-        Open BuildProof
+        Open Leeward
       </a>
 
       <p style={{ marginTop: 24, color: "#64748b", fontSize: 14 }}>

@@ -3,7 +3,7 @@ import "./globals.css";
 import "./landing.css";
 
 export const metadata: Metadata = {
-  title: "BuildProof",
+  title: "Leeward",
   description: "Dispute-ready documentation for contractors.",
 };
 

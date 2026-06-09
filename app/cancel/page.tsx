@@ -17,7 +17,7 @@ export default function CancelPage() {
           letterSpacing: "0.08em",
         }}
       >
-        BuildProof
+        Leeward
       </p>
 
       <h1
@@ -32,7 +32,7 @@ export default function CancelPage() {
       </h1>
 
       <p style={{ fontSize: 20, color: "#475569" }}>
-        No payment was completed. You can return to the BuildProof site anytime.
+        No payment was completed. You can return to the Leeward site anytime.
       </p>
 
       <a
@@ -48,7 +48,7 @@ export default function CancelPage() {
           textDecoration: "none",
         }}
       >
-        Back to BuildProof
+        Back to Leeward
       </a>
 
       <p style={{ marginTop: 24, color: "#64748b", fontSize: 14 }}>
