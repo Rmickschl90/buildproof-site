@@ -28,7 +28,7 @@ export default function SuccessPage() {
           marginBottom: 24,
         }}
       >
-        You’re ready to start documenting.
+        You're ready to start documenting.
       </h1>
 
       <p style={{ fontSize: 20, color: "#475569" }}>
@@ -42,7 +42,7 @@ export default function SuccessPage() {
       </p>
 
       <a
-        href="https://buildproof-kappa.vercel.app"
+        href="https://app.getleeward.com"
         style={{
           display: "inline-block",
           marginTop: 32,
