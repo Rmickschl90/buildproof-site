@@ -44,7 +44,7 @@ export default function Home() {
 
           <div className="bp-actions">
             <a
-              href="https://buy.stripe.com/9B6dR2f8cgmO5PL7sQaEE00"
+              href="https://app.getleeward.com/login"
               style={{
                 display: "inline-flex",
                 alignItems: "center",
@@ -348,7 +348,7 @@ export default function Home() {
 
             <a
               className="bp-primary"
-              href="https://buy.stripe.com/9B6dR2f8cgmO5PL7sQaEE00"
+              href="https://app.getleeward.com/login"
               style={{
                 marginTop: "40px",
                 width: "100%",
