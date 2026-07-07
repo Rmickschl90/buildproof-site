@@ -374,6 +374,84 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="bp-section">
+        <div className="bp-container">
+          <div
+            style={{
+              background: "#0f172a",
+              color: "white",
+              borderRadius: "32px",
+              padding: "56px 32px",
+              textAlign: "center",
+              boxShadow: "0 25px 70px rgba(15, 23, 42, 0.18)",
+            }}
+          >
+            <p
+              className="bp-eyebrow"
+              style={{ color: "#cbd5e1" }}
+            >
+              Available on Android
+            </p>
+
+            <h2 style={{ color: "white", marginBottom: "18px" }}>
+              Use Leeward anywhere project work happens.
+            </h2>
+
+            <p
+              style={{
+                color: "#cbd5e1",
+                fontSize: "18px",
+                lineHeight: 1.7,
+                maxWidth: "680px",
+                margin: "0 auto",
+              }}
+            >
+              Start in your browser or install Leeward on your Android device from
+              Google Play. iPhone users can access Leeward through the web while App
+              Store distribution is being prepared.
+            </p>
+
+            <div
+              style={{
+                marginTop: "34px",
+                display: "flex",
+                justifyContent: "center",
+                flexWrap: "wrap",
+                gap: "18px",
+              }}
+            >
+              <a
+                href="https://play.google.com/store/apps/details?id=com.linquelabs.leeward"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Get Leeward on Google Play"
+                style={{ display: "inline-flex" }}
+              >
+                <img
+                  src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+                  alt="Get it on Google Play"
+                  style={{
+                    height: "72px",
+                    width: "auto",
+                    display: "block",
+                  }}
+                />
+              </a>
+            </div>
+
+            <p
+              style={{
+                marginTop: "18px",
+                color: "#94a3b8",
+                fontSize: "14px",
+              }}
+            >
+              Web access is available at app.getleeward.com.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <footer className="bp-footer">
         <div className="bp-container bp-footer-inner">
           <p>Leeward © 2026</p>
