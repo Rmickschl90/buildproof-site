@@ -12,6 +12,12 @@ export default function BlogPage() {
     <main className="bp-page">
       <section className="bp-section">
         <div className="bp-container">
+          <div style={{ marginBottom: "24px" }}>
+            <Link href="/" style={{ textDecoration: "none" }}>
+              ← Return to Homepage
+            </Link>
+          </div>
+
           <p className="bp-eyebrow">Leeward Blog</p>
 
           <h1>Project documentation guides for clearer project history.</h1>
