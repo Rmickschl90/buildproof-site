@@ -20,6 +20,7 @@ export default function Home() {
           <nav className="bp-nav">
             <a href="#features">Features</a>
             <a href="#pricing">Pricing</a>
+            <a href="/blog">Blog</a>
             <a href="mailto:admin@linquelabs.com">Contact</a>
           </nav>
         </div>
@@ -387,3 +388,4 @@ export default function Home() {
     </main>
   );
 }
+
