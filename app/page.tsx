@@ -33,9 +33,9 @@ export default function Home() {
           </h1>
 
           <p className="bp-subhead">
-            Leeward organizes timelines, approvals, photos, exports, and
-            project updates into one structured record with shareable history and
-            accountability built in.
+            Leeward organizes timelines, estimates, change orders, invoices,
+            documents, and approvals into one structured record — with
+            shareable client history and accountability built in.
           </p>
 
           <p className="bp-support">
@@ -64,6 +64,17 @@ export default function Home() {
             </a>
           </div>
 
+          <p
+            style={{
+              marginTop: "16px",
+              color: "#64748b",
+              fontSize: "15px",
+              fontWeight: 600,
+            }}
+          >
+            Start with a 30-day free trial. No card charged until it ends.
+          </p>
+
           <div
             className="bp-hero-image-wrap"
             style={{
@@ -73,8 +84,8 @@ export default function Home() {
             }}
           >
             <img
-              src="/hero-timeline.png"
-              alt="Leeward approval workflow"
+              src="/hero-dashboard-dark.jpg"
+              alt="Leeward record view, dark mode"
               style={{
                 width: "280px",
                 maxWidth: "80vw",
@@ -112,8 +123,49 @@ export default function Home() {
             }}
           >
             <img
-              src="/share-timeline.png"
-              alt="Leeward share timeline"
+              src="/client-invoice-view.jpg"
+              alt="Leeward client-facing invoice and timeline view"
+              style={{
+                width: "280px",
+                maxWidth: "80vw",
+                height: "auto",
+                borderRadius: "28px",
+                boxShadow: "0 25px 60px rgba(0, 0, 0, 0.12)",
+                display: "block",
+              }}
+            />
+          </div>
+        </div>
+      </section>
+
+      <section className="bp-share-section">
+        <div className="bp-container">
+          <p className="bp-eyebrow">Estimates, change orders & invoices</p>
+
+          <h2 className="bp-share-title">
+            Turn your bid into a running, shareable total.
+          </h2>
+
+          <p className="bp-share-text">
+            Build a baseline estimate with itemized line items, add change
+            orders as the work evolves, and let Leeward keep a running total
+            automatically. Log payments as they come in and share a live
+            client-facing invoice link that always reflects the real balance
+            due — no separate spreadsheet, no manual math.
+          </p>
+
+          <div
+            className="bp-hero-image-wrap"
+            style={{
+              marginTop: "56px",
+              marginBottom: "40px",
+              display: "flex",
+              justifyContent: "center",
+            }}
+          >
+            <img
+              src="/estimate-tab-dark.jpg"
+              alt="Leeward estimate tab with line items and running total"
               style={{
                 width: "280px",
                 maxWidth: "80vw",
@@ -137,8 +189,9 @@ export default function Home() {
 
           <p className="bp-share-text">
             Leeward preserves timeline records, approvals, delivery history,
-            view activity, and project details so important records are easier
-            to reference when accountability matters.
+            view activity, and project details — plus reference documents like
+            insurance certificates and permits — so everything is organized
+            and ready to export the moment accountability matters.
           </p>
 
           <div
@@ -152,8 +205,8 @@ export default function Home() {
             }}
           >
             <img
-              src="/timeline-records-leeward.png"
-              alt="Leeward timeline records"
+              src="/timeline-photo-dark.jpg"
+              alt="Leeward timeline with photo documentation"
               style={{
                 width: "280px",
                 maxWidth: "80vw",
@@ -165,8 +218,8 @@ export default function Home() {
             />
 
             <img
-              src="/approval-delivery-records-leeward.png"
-              alt="Leeward approval and delivery records"
+              src="/documents-tab-dark.jpg"
+              alt="Leeward reference documents tab"
               style={{
                 width: "280px",
                 maxWidth: "80vw",
@@ -176,6 +229,85 @@ export default function Home() {
                 display: "block",
               }}
             />
+          </div>
+        </div>
+      </section>
+
+      <section className="bp-share-section">
+        <div className="bp-container">
+          <p className="bp-eyebrow">Built around how the work actually happens</p>
+
+          <h2 className="bp-share-title">
+            Start a record in seconds. Send an update in one tap.
+          </h2>
+
+          <p className="bp-share-text">
+            Attach photos and files as you go, then send a polished client
+            update — approvals, photos, and cost changes included — the
+            moment you're ready. Everything works offline and syncs
+            automatically when you're back in range.
+          </p>
+
+          <div
+            className="bp-hero-image-wrap"
+            style={{
+              marginTop: "56px",
+              marginBottom: "40px",
+              display: "flex",
+              justifyContent: "center",
+            }}
+          >
+            <img
+              src="/send-update-dark.jpg"
+              alt="Leeward send update composer"
+              style={{
+                width: "280px",
+                maxWidth: "80vw",
+                height: "auto",
+                borderRadius: "28px",
+                boxShadow: "0 25px 60px rgba(0, 0, 0, 0.12)",
+                display: "block",
+              }}
+            />
+          </div>
+        </div>
+      </section>
+
+      <section className="bp-section">
+        <div className="bp-container">
+          <div
+            style={{
+              background: "#0f172a",
+              color: "white",
+              borderRadius: "32px",
+              padding: "56px 32px",
+              textAlign: "center",
+              boxShadow: "0 25px 70px rgba(15, 23, 42, 0.18)",
+            }}
+          >
+            <p className="bp-eyebrow" style={{ color: "#cbd5e1" }}>
+              For crews and small teams
+            </p>
+
+            <h2 style={{ color: "white", marginBottom: "18px" }}>
+              One subscription. Your whole team, every record.
+            </h2>
+
+            <p
+              style={{
+                color: "#cbd5e1",
+                fontSize: "18px",
+                lineHeight: 1.7,
+                maxWidth: "680px",
+                margin: "0 auto",
+              }}
+            >
+              Invite your crew, office admin, or project partner under one
+              Team plan. Every member can access every record — no
+              per-project permissions to manage, no re-sharing login
+              credentials. The owner keeps billing and control; everyone else
+              just gets to work.
+            </p>
           </div>
         </div>
       </section>
@@ -192,6 +324,56 @@ export default function Home() {
                 Keep project updates, photos, approvals, notes, and attachments
                 organized in a clean timeline that shows exactly what happened and
                 when.
+              </p>
+            </div>
+
+            <div className="bp-card">
+              <h3>Estimates & Change Orders</h3>
+
+              <p>
+                Build a baseline estimate with line items, add change orders as
+                work evolves, and keep a running project total that updates
+                automatically.
+              </p>
+            </div>
+
+            <div className="bp-card">
+              <h3>Client Invoice Links</h3>
+
+              <p>
+                Share a live, read-only invoice link showing the current total,
+                itemized charges, and balance due — no separate document to
+                keep updated by hand.
+              </p>
+            </div>
+
+            <div className="bp-card">
+              <h3>Payment Tracking</h3>
+
+              <p>
+                Log payments as clients pay and see balance due update
+                automatically, both in the app and on the client-facing
+                invoice.
+              </p>
+            </div>
+
+            <div className="bp-card">
+              <h3>Reference Document Vault</h3>
+
+              <p>
+                Keep insurance certificates, permits, and other supporting
+                documents attached to a record, with the option to include
+                any of them in a dispute export.
+              </p>
+            </div>
+
+            <div className="bp-card">
+              <h3>Team Accounts</h3>
+
+              <p>
+                Add crew members or office staff to one shared plan so
+                everyone can access the same records without swapping
+                logins.
               </p>
             </div>
 
@@ -268,109 +450,222 @@ export default function Home() {
           <p className="bp-eyebrow">Simple pricing</p>
 
           <h2 className="bp-share-title">
-            Straightforward pricing for growing teams.
+            Straightforward pricing for solo contractors and growing teams.
           </h2>
 
           <p className="bp-share-text">
-            One plan. Full access to Leeward’s documentation workflow,
-            approvals, exports, offline capability, and client-facing project
-            timelines.
+            Every plan includes Leeward’s full documentation workflow —
+            estimates, approvals, exports, offline capability, and
+            client-facing timelines. Both plans start with a 30-day free
+            trial.
           </p>
 
           <div
             style={{
               marginTop: "56px",
-              background: "white",
-              border: "1px solid #e2e8f0",
-              borderRadius: "28px",
-              padding: "48px",
-              maxWidth: "560px",
-              boxShadow: "0 20px 60px rgba(15, 23, 42, 0.08)",
+              display: "flex",
+              gap: "28px",
+              flexWrap: "wrap",
             }}
           >
-            <p
-              style={{
-                margin: 0,
-                color: "#64748b",
-                fontWeight: 700,
-                letterSpacing: "-0.02em",
-              }}
-            >
-              Leeward
-            </p>
-
             <div
               style={{
-                marginTop: "16px",
-                display: "flex",
-                alignItems: "baseline",
-                gap: "8px",
+                background: "white",
+                border: "1px solid #e2e8f0",
+                borderRadius: "28px",
+                padding: "48px",
+                maxWidth: "480px",
+                flex: "1 1 380px",
+                boxShadow: "0 20px 60px rgba(15, 23, 42, 0.08)",
               }}
             >
-              <span
+              <p
                 style={{
-                  fontSize: "64px",
-                  fontWeight: 900,
-                  letterSpacing: "-0.06em",
-                  lineHeight: 1,
-                }}
-              >
-                $29
-              </span>
-
-              <span
-                style={{
+                  margin: 0,
                   color: "#64748b",
-                  fontSize: "20px",
-                  fontWeight: 600,
+                  fontWeight: 700,
+                  letterSpacing: "-0.02em",
                 }}
               >
-                / month
-              </span>
+                Individual
+              </p>
+
+              <div
+                style={{
+                  marginTop: "16px",
+                  display: "flex",
+                  alignItems: "baseline",
+                  gap: "8px",
+                }}
+              >
+                <span
+                  style={{
+                    fontSize: "64px",
+                    fontWeight: 900,
+                    letterSpacing: "-0.06em",
+                    lineHeight: 1,
+                  }}
+                >
+                  $29
+                </span>
+
+                <span
+                  style={{
+                    color: "#64748b",
+                    fontSize: "20px",
+                    fontWeight: 600,
+                  }}
+                >
+                  / month
+                </span>
+              </div>
+
+              <div
+                style={{
+                  marginTop: "32px",
+                  display: "grid",
+                  gap: "16px",
+                  color: "#334155",
+                  fontSize: "17px",
+                  lineHeight: 1.7,
+                }}
+              >
+                <div>✓ Unlimited projects</div>
+                <div>✓ Estimates, change orders & invoices</div>
+                <div>✓ One-click dispute exports</div>
+                <div>✓ Offline documentation</div>
+                <div>✓ Client-facing timelines</div>
+                <div>✓ Delivery & view tracking</div>
+              </div>
+
+              <a
+                className="bp-primary"
+                href="https://app.getleeward.com/login"
+                style={{
+                  marginTop: "40px",
+                  width: "100%",
+                  display: "block",
+                  textAlign: "center",
+                  textDecoration: "none",
+                }}
+              >
+                Get Started
+              </a>
+
+              <p
+                style={{
+                  marginTop: "18px",
+                  color: "#64748b",
+                  fontSize: "14px",
+                }}
+              >
+                For one person documenting their own projects.
+              </p>
             </div>
 
             <div
               style={{
-                marginTop: "32px",
-                display: "grid",
-                gap: "16px",
-                color: "#334155",
-                fontSize: "17px",
-                lineHeight: 1.7,
+                background: "white",
+                border: "1px solid #e2e8f0",
+                borderRadius: "28px",
+                padding: "48px",
+                maxWidth: "480px",
+                flex: "1 1 380px",
+                boxShadow: "0 20px 60px rgba(15, 23, 42, 0.08)",
               }}
             >
-              <div>✓ Unlimited projects</div>
-              <div>✓ Approval workflows</div>
-              <div>✓ One-click dispute exports</div>
-              <div>✓ Offline documentation</div>
-              <div>✓ Client-facing timelines</div>
-              <div>✓ Delivery & view tracking</div>
+              <p
+                style={{
+                  margin: 0,
+                  color: "#64748b",
+                  fontWeight: 700,
+                  letterSpacing: "-0.02em",
+                }}
+              >
+                Team
+              </p>
+
+              <div
+                style={{
+                  marginTop: "16px",
+                  display: "flex",
+                  alignItems: "baseline",
+                  gap: "8px",
+                }}
+              >
+                <span
+                  style={{
+                    fontSize: "64px",
+                    fontWeight: 900,
+                    letterSpacing: "-0.06em",
+                    lineHeight: 1,
+                  }}
+                >
+                  $69
+                </span>
+
+                <span
+                  style={{
+                    color: "#64748b",
+                    fontSize: "20px",
+                    fontWeight: 600,
+                  }}
+                >
+                  / month
+                </span>
+              </div>
+
+              <div
+                style={{
+                  marginTop: "32px",
+                  display: "grid",
+                  gap: "16px",
+                  color: "#334155",
+                  fontSize: "17px",
+                  lineHeight: 1.7,
+                }}
+              >
+                <div>✓ Everything in Individual</div>
+                <div>✓ Up to 5 team members</div>
+                <div>✓ Shared access to every record</div>
+                <div>✓ One owner manages billing & invites</div>
+              </div>
+
+              <a
+                className="bp-primary"
+                href="https://app.getleeward.com/login"
+                style={{
+                  marginTop: "40px",
+                  width: "100%",
+                  display: "block",
+                  textAlign: "center",
+                  textDecoration: "none",
+                }}
+              >
+                Get Started
+              </a>
+
+              <p
+                style={{
+                  marginTop: "18px",
+                  color: "#64748b",
+                  fontSize: "14px",
+                }}
+              >
+                For crews, office staff, and project partners.
+              </p>
             </div>
-
-            <a
-              className="bp-primary"
-              href="https://app.getleeward.com/login"
-              style={{
-                marginTop: "40px",
-                width: "100%",
-                display: "block",
-                textAlign: "center",
-                textDecoration: "none",
-              }}
-            >
-              Get Started
-            </a>
-
-            <p
-              style={{
-                marginTop: "18px",
-                color: "#64748b",
-                fontSize: "14px",
-              }}
-            >
-              Pricing and features may continue evolving during rollout.
-            </p>
           </div>
+
+          <p
+            style={{
+              marginTop: "24px",
+              color: "#64748b",
+              fontSize: "14px",
+            }}
+          >
+            Pricing and features may continue evolving during rollout.
+          </p>
         </div>
       </section>
 
@@ -408,7 +703,9 @@ export default function Home() {
             >
               Start in your browser or install Leeward on your Android device from
               Google Play. iPhone users can access Leeward through the web while App
-              Store distribution is being prepared.
+              Store distribution is being prepared. Built for contractors,
+              subcontractors, and property managers who need a clear record
+              of work performed.
             </p>
 
             <div
@@ -466,4 +763,3 @@ export default function Home() {
     </main>
   );
 }
-
