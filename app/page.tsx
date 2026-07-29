@@ -29,7 +29,7 @@ export default function Home() {
       <section className="bp-hero">
         <div className="bp-container">
           <h1>
-            Clear project history when accountability matters most.
+            Clear records when accountability matters most.
           </h1>
 
           <p className="bp-subhead">
@@ -41,6 +41,12 @@ export default function Home() {
           <p className="bp-support">
             Most problems don’t come from bad work — they come from bad
             records.
+          </p>
+
+          <p className="bp-support" style={{ marginTop: "10px" }}>
+            Built for contractors, subcontractors, landlords, property
+            managers, and anyone else who needs a clear record of what
+            happened.
           </p>
 
           <div className="bp-actions">
@@ -72,7 +78,7 @@ export default function Home() {
               fontWeight: 600,
             }}
           >
-            Start with a 30-day free trial. No card charged until it ends.
+            Start with a 30-day free trial.
           </p>
 
           <div
@@ -101,16 +107,18 @@ export default function Home() {
 
       <section className="bp-share-section">
         <div className="bp-container">
-          <p className="bp-eyebrow">Structured project communication</p>
+          <p className="bp-eyebrow">Structured record communication</p>
 
           <h2 className="bp-share-title">
-            Share clean, read-only project timelines with clients.
+            Share clean, read-only record timelines with clients, tenants,
+            or owners.
           </h2>
 
           <p className="bp-share-text">
             Leeward keeps approvals, updates, photos, and finalized records
-            organized in chronological order — giving clients a professional way
-            to follow project progress without editing access.
+            organized in chronological order — giving clients, tenants, or
+            property owners a professional way to follow progress without
+            editing access.
           </p>
 
           <div
@@ -123,8 +131,8 @@ export default function Home() {
             }}
           >
             <img
-              src="/client-invoice-view.jpg"
-              alt="Leeward client-facing invoice and timeline view"
+              src="/shared-timeline-view-v2.jpg"
+              alt="Leeward read-only shared timeline view"
               style={{
                 width: "280px",
                 maxWidth: "80vw",
@@ -140,7 +148,7 @@ export default function Home() {
 
       <section className="bp-share-section">
         <div className="bp-container">
-          <p className="bp-eyebrow">Estimates, change orders & invoices</p>
+          <p className="bp-eyebrow">Estimates & change orders</p>
 
           <h2 className="bp-share-title">
             Turn your bid into a running, shareable total.
@@ -149,9 +157,62 @@ export default function Home() {
           <p className="bp-share-text">
             Build a baseline estimate with itemized line items, add change
             orders as the work evolves, and let Leeward keep a running total
-            automatically. Log payments as they come in and share a live
-            client-facing invoice link that always reflects the real balance
-            due — no separate spreadsheet, no manual math.
+            automatically. Log payments as they come in and watch the
+            balance due update automatically — no separate spreadsheet, no
+            manual math.
+          </p>
+
+          <div
+            style={{
+              display: "flex",
+              gap: "28px",
+              flexWrap: "wrap",
+              justifyContent: "center",
+              marginTop: "56px",
+              marginBottom: "40px",
+            }}
+          >
+            <img
+              src="/estimate-tab-dark.jpg"
+              alt="Leeward estimate tab with line items and running total"
+              style={{
+                width: "280px",
+                maxWidth: "80vw",
+                height: "auto",
+                borderRadius: "28px",
+                boxShadow: "0 25px 60px rgba(0, 0, 0, 0.12)",
+                display: "block",
+              }}
+            />
+
+            <img
+              src="/log-payment-dark.jpg"
+              alt="Leeward log payment dialog with dollar amount or percent of balance due"
+              style={{
+                width: "280px",
+                maxWidth: "80vw",
+                height: "auto",
+                borderRadius: "28px",
+                boxShadow: "0 25px 60px rgba(0, 0, 0, 0.12)",
+                display: "block",
+              }}
+            />
+          </div>
+        </div>
+      </section>
+
+      <section className="bp-share-section">
+        <div className="bp-container">
+          <p className="bp-eyebrow">Client invoices</p>
+
+          <h2 className="bp-share-title">
+            Share a live invoice link that's always up to date.
+          </h2>
+
+          <p className="bp-share-text">
+            Send a read-only invoice link showing the current total,
+            itemized charges, and balance due after payments — no separate
+            document to keep updated by hand.
           </p>
 
           <div
@@ -164,8 +225,8 @@ export default function Home() {
             }}
           >
             <img
-              src="/estimate-tab-dark.jpg"
-              alt="Leeward estimate tab with line items and running total"
+              src="/client-invoice-view-v2.jpg"
+              alt="Leeward client-facing invoice view"
               style={{
                 width: "280px",
                 maxWidth: "80vw",
@@ -184,14 +245,16 @@ export default function Home() {
           <p className="bp-eyebrow">Dispute-ready exports</p>
 
           <h2 className="bp-share-title">
-            Turn project history into organized documentation.
+            Turn a record’s history into organized documentation.
           </h2>
 
           <p className="bp-share-text">
             Leeward preserves timeline records, approvals, delivery history,
-            view activity, and project details — plus reference documents like
-            insurance certificates and permits — so everything is organized
-            and ready to export the moment accountability matters.
+            view activity, and record details — plus reference documents
+            like leases, insurance certificates, permits, and inspection
+            reports — so everything is organized and ready to export,
+            whether you're closing out a job or documenting a rental
+            property.
           </p>
 
           <div
@@ -242,10 +305,10 @@ export default function Home() {
           </h2>
 
           <p className="bp-share-text">
-            Attach photos and files as you go, then send a polished client
-            update — approvals, photos, and cost changes included — the
-            moment you're ready. Everything works offline and syncs
-            automatically when you're back in range.
+            Attach photos and files as you go, then send a polished update —
+            approvals, photos, and cost changes included — to whoever needs
+            to see it, the moment you're ready. Everything works offline and
+            syncs automatically when you're back in range.
           </p>
 
           <div
@@ -286,7 +349,7 @@ export default function Home() {
             }}
           >
             <p className="bp-eyebrow" style={{ color: "#cbd5e1" }}>
-              For crews and small teams
+              For crews, offices, and property teams
             </p>
 
             <h2 style={{ color: "white", marginBottom: "18px" }}>
@@ -302,9 +365,9 @@ export default function Home() {
                 margin: "0 auto",
               }}
             >
-              Invite your crew, office admin, or project partner under one
-              Team plan. Every member can access every record — no
-              per-project permissions to manage, no re-sharing login
+              Invite your crew, office admin, property manager, or partner
+              under one Team plan. Every member can access every record — no
+              per-record permissions to manage, no re-sharing login
               credentials. The owner keeps billing and control; everyone else
               just gets to work.
             </p>
@@ -314,16 +377,17 @@ export default function Home() {
 
       <section id="features" className="bp-section">
         <div className="bp-container">
-          <h2>Built for clear project history when accountability matters.</h2>
+          <h2>Built for clear record history when accountability matters.</h2>
 
           <div className="bp-grid">
             <div className="bp-card">
-              <h3>Chronological Project Records</h3>
+              <h3>Chronological Record History</h3>
 
               <p>
-                Keep project updates, photos, approvals, notes, and attachments
-                organized in a clean timeline that shows exactly what happened and
-                when.
+                Keep updates, photos, approvals, notes, and attachments
+                organized in a clean timeline that shows exactly what happened
+                and when — on a job site, a rental unit, or anywhere else you
+                need a record.
               </p>
             </div>
 
@@ -332,7 +396,7 @@ export default function Home() {
 
               <p>
                 Build a baseline estimate with line items, add change orders as
-                work evolves, and keep a running project total that updates
+                work evolves, and keep a running total that updates
                 automatically.
               </p>
             </div>
@@ -361,9 +425,10 @@ export default function Home() {
               <h3>Reference Document Vault</h3>
 
               <p>
-                Keep insurance certificates, permits, and other supporting
-                documents attached to a record, with the option to include
-                any of them in a dispute export.
+                Keep leases, insurance certificates, permits, inspection
+                reports, and other supporting documents attached to a
+                record, with the option to include any of them in a dispute
+                export.
               </p>
             </div>
 
@@ -371,9 +436,9 @@ export default function Home() {
               <h3>Team Accounts</h3>
 
               <p>
-                Add crew members or office staff to one shared plan so
-                everyone can access the same records without swapping
-                logins.
+                Add crew members, office staff, or property management
+                teammates to one shared plan so everyone can access the
+                same records without swapping logins.
               </p>
             </div>
 
@@ -381,7 +446,7 @@ export default function Home() {
               <h3>Offline Jobsite Capture</h3>
 
               <p>
-                Continue documenting projects even with unreliable service, then sync
+                Continue documenting work even with unreliable service, then sync
                 records later when the connection returns.
               </p>
             </div>
@@ -390,7 +455,7 @@ export default function Home() {
               <h3>Approval Tracking</h3>
 
               <p>
-                Keep approvals directly connected to project history with cost impact,
+                Keep approvals directly connected to record history with cost impact,
                 schedule impact, timestamps, responses, and supporting documentation.
               </p>
             </div>
@@ -399,7 +464,7 @@ export default function Home() {
               <h3>Read-Only Client Timelines</h3>
 
               <p>
-                Share professional client-facing timelines that update as the project
+                Share professional client-facing timelines that update as the record
                 progresses without giving editing access to the underlying records.
               </p>
             </div>
@@ -409,7 +474,7 @@ export default function Home() {
 
               <p>
                 Sent updates preserve a locked snapshot of finalized records so the
-                project history shared at that moment stays consistent over time.
+                history shared at that moment stays consistent over time.
               </p>
             </div>
 
@@ -428,7 +493,7 @@ export default function Home() {
               <p>
                 Preserve important documentation metadata including timestamps,
                 integrity tags, approval history, and record details that help support
-                project accountability.
+                accountability for any kind of record.
               </p>
             </div>
 
@@ -438,7 +503,7 @@ export default function Home() {
               <p>
                 Generate professional PDF documentation packages containing timelines,
                 approvals, attachments, delivery history, view activity, and supporting
-                project records.
+                reference documents.
               </p>
             </div>
           </div>
@@ -450,7 +515,7 @@ export default function Home() {
           <p className="bp-eyebrow">Simple pricing</p>
 
           <h2 className="bp-share-title">
-            Straightforward pricing for solo contractors and growing teams.
+            Straightforward pricing for solo users and growing teams.
           </h2>
 
           <p className="bp-share-text">
@@ -530,7 +595,7 @@ export default function Home() {
                   lineHeight: 1.7,
                 }}
               >
-                <div>✓ Unlimited projects</div>
+                <div>✓ Unlimited records</div>
                 <div>✓ Estimates, change orders & invoices</div>
                 <div>✓ One-click dispute exports</div>
                 <div>✓ Offline documentation</div>
@@ -559,7 +624,8 @@ export default function Home() {
                   fontSize: "14px",
                 }}
               >
-                For one person documenting their own projects.
+                For one person keeping a clear record of their own work or
+                properties.
               </p>
             </div>
 
@@ -652,7 +718,7 @@ export default function Home() {
                   fontSize: "14px",
                 }}
               >
-                For crews, office staff, and project partners.
+                For crews, offices, and property management teams.
               </p>
             </div>
           </div>
@@ -689,7 +755,7 @@ export default function Home() {
             </p>
 
             <h2 style={{ color: "white", marginBottom: "18px" }}>
-              Use Leeward anywhere project work happens.
+              Use Leeward anywhere the work happens.
             </h2>
 
             <p
