@@ -173,7 +173,7 @@ export default function Home() {
             }}
           >
             <img
-              src="/estimate-tab-dark.jpg"
+              src="/estimate-tab-dark-v2.jpg"
               alt="Leeward estimate tab with line items and running total"
               style={{
                 width: "280px",
@@ -186,7 +186,7 @@ export default function Home() {
             />
 
             <img
-              src="/log-payment-dark.jpg"
+              src="/log-payment-dark-v2.jpg"
               alt="Leeward log payment dialog with dollar amount or percent of balance due"
               style={{
                 width: "280px",
