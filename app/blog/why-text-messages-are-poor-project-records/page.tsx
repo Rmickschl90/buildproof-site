@@ -33,7 +33,9 @@ export default function ArticlePage() {
               Many project teams rely on text messages because they are fast,
               familiar, and easy to send from the field. That convenience is useful
               during the workday, but it can create problems when those messages
-              become the only record of important project decisions.
+              become the only record of important project decisions — whether
+              you're a contractor, a subcontractor, a landlord, or a property
+              manager managing that communication.
             </p>
 
             <h2>Text messages are easy to lose</h2>
@@ -80,9 +82,9 @@ export default function ArticlePage() {
 
             <p>
               Leeward helps teams maintain communication records, project updates,
-              approvals, photo documentation, and project history in one organized
-              timeline instead of leaving important information scattered across
-              disconnected conversations.
+              approvals, photo documentation, estimates and change orders, and
+              project history in one organized timeline instead of leaving
+              important information scattered across disconnected conversations.
             </p>
           </div>
         </div>

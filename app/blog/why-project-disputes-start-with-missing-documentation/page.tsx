@@ -72,9 +72,9 @@ export default function ArticlePage() {
             </ul>
 
             <p>
-              These questions matter for contractors, project teams, property
-              managers, restoration companies, maintenance teams, and other
-              project-based organizations that need clear records when accountability
+              These questions matter for contractors, subcontractors, landlords,
+              property managers, restoration companies, maintenance teams, and any
+              other team that needs dependable records when accountability
               matters.
             </p>
 
@@ -98,8 +98,9 @@ export default function ArticlePage() {
 
             <p>
               Leeward helps teams maintain project documentation, communication
-              records, approvals, photo documentation, daily updates, and exportable
-              project history in one organized timeline.
+              records, approvals, photo documentation, daily updates, estimates
+              and change orders, payment tracking, and exportable dispute-ready
+              records in one organized timeline.
             </p>
 
             <p>

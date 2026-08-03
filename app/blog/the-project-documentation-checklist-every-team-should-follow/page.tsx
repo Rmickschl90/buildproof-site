@@ -39,7 +39,9 @@ export default function ArticlePage() {
             <p>
               When documentation is incomplete, teams often struggle to answer
               simple questions about approvals, changes, communication, timelines,
-              and project decisions.
+              and project decisions. This checklist applies whether you're a
+              contractor, a subcontractor, a landlord, or a property manager —
+              anyone responsible for keeping dependable records of work performed.
             </p>
 
             <h2>1. Maintain a clear project timeline</h2>
@@ -87,10 +89,21 @@ export default function ArticlePage() {
             <p>
               Documents, attachments, reports, drawings, and other project files
               should remain connected to the work they support instead of being
-              stored in isolated locations.
+              stored in isolated locations. A dedicated reference document vault
+              keeps contracts, permits, and specs available without cluttering
+              the timeline.
             </p>
 
-            <h2>7. Create exportable project records</h2>
+            <h2>7. Track estimates, change orders, and payments</h2>
+
+            <p>
+              Cost history matters just as much as communication history. A
+              baseline estimate, every change order that follows it, and a log
+              of payments received should stay attached to the project — not
+              live in a separate spreadsheet disconnected from the work.
+            </p>
+
+            <h2>8. Create exportable project records</h2>
 
             <p>
               A complete project history should remain accessible even after a
@@ -108,9 +121,10 @@ export default function ArticlePage() {
             </p>
 
             <p>
-              Leeward helps teams maintain project documentation, communication
-              records, approvals, photo documentation, and project history in one
-              organized timeline.
+              Leeward helps contractors, subcontractors, landlords, and property
+              managers maintain project documentation, communication records,
+              approvals, photo documentation, estimates and change orders,
+              payment tracking, and project history in one organized timeline.
             </p>
           </div>
         </div>

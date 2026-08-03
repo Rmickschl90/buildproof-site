@@ -33,7 +33,10 @@ export default function ArticlePage() {
               Most projects generate a large amount of information over time.
               Updates, approvals, photos, notes, emails, files, and conversations
               accumulate quickly. Without a clear system, those records become
-              difficult to organize and even harder to use later.
+              difficult to organize and even harder to use later. This applies
+              equally to contractors, subcontractors, landlords, and property
+              managers — anyone who needs a dependable record of a job from
+              start to finish.
             </p>
 
             <h2>Start with a single timeline</h2>
@@ -84,8 +87,8 @@ export default function ArticlePage() {
 
             <p>
               Leeward helps teams maintain project history, documentation,
-              approvals, communication records, and supporting files in one
-              organized timeline.
+              approvals, communication records, estimates and change orders,
+              payment tracking, and supporting files in one organized timeline.
             </p>
           </div>
         </div>

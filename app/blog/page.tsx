@@ -24,8 +24,9 @@ export default function BlogPage() {
 
           <p className="bp-share-text">
             Practical guides about project documentation, communication records,
-            approvals, daily logs, and maintaining clear project history when
-            accountability matters.
+            approvals, estimates, and maintaining clear project history when
+            accountability matters — for contractors, subcontractors,
+            landlords, and property managers alike.
           </p>
 
           <div className="bp-grid" style={{ marginTop: "48px" }}>
@@ -86,6 +87,90 @@ export default function BlogPage() {
               <p>
                 Learn what strong project documentation includes, from timelines and daily
                 logs to approvals, communication history, photo records, and exports.
+              </p>
+            </Link>
+
+            <Link
+              href="/blog/how-landlords-and-property-managers-can-keep-dispute-ready-records"
+              className="bp-card"
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
+              <h3>How Landlords and Property Managers Can Keep Dispute-Ready Records</h3>
+              <p>
+                Learn how landlords and property managers can maintain dispute-ready
+                records of repairs, vendor work, and tenant communication.
+              </p>
+            </Link>
+
+            <Link
+              href="/blog/change-orders-why-undocumented-scope-changes-cause-payment-disputes"
+              className="bp-card"
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
+              <h3>Change Orders: Why Undocumented Scope Changes Cause the Most Payment Disputes</h3>
+              <p>
+                Learn why undocumented change orders are one of the most common causes
+                of payment disputes, and what a dependable change order record should include.
+              </p>
+            </Link>
+
+            <Link
+              href="/blog/what-belongs-in-a-client-approval-record"
+              className="bp-card"
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
+              <h3>What Belongs in a Client Approval Record</h3>
+              <p>
+                Learn what a strong client approval record should include, and why
+                verbal approval leaves your business exposed.
+              </p>
+            </Link>
+
+            <Link
+              href="/blog/tracking-partial-payments-and-deposits-without-losing-the-paper-trail"
+              className="bp-card"
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
+              <h3>Tracking Partial Payments and Deposits Without Losing the Paper Trail</h3>
+              <p>
+                Learn how to track deposits and partial payments without losing
+                the record of what was actually paid, and when.
+              </p>
+            </Link>
+
+            <Link
+              href="/blog/a-field-guide-to-working-offline-why-connectivity-shouldnt-break-your-documentation"
+              className="bp-card"
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
+              <h3>A Field Guide to Working Offline</h3>
+              <p>
+                Learn why offline reliability matters for project documentation,
+                and what to look for in a tool built for spotty jobsite connectivity.
+              </p>
+            </Link>
+
+            <Link
+              href="/blog/subcontractor-documentation-protecting-yourself-without-the-contract"
+              className="bp-card"
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
+              <h3>Subcontractor Documentation: Protecting Yourself Without the Contract</h3>
+              <p>
+                Learn why subcontractors face unique documentation risk, and what
+                records protect you when you don&apos;t control the primary contract.
+              </p>
+            </Link>
+
+            <Link
+              href="/blog/what-actually-holds-up-when-a-project-dispute-goes-to-mediation-or-court"
+              className="bp-card"
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
+              <h3>What Actually Holds Up in Mediation or Court</h3>
+              <p>
+                Learn what kind of project documentation tends to hold up when
+                a dispute escalates, and how to build the record before you need it.
               </p>
             </Link>
           </div>

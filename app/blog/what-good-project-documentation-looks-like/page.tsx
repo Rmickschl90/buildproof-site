@@ -33,6 +33,8 @@ export default function ArticlePage() {
               Good documentation is not just a collection of files. It is a clear
               project record that helps explain what happened, when it happened,
               who approved it, and what information supports the project history.
+              The standard is the same whether you're a contractor, a
+              subcontractor, a landlord, or a property manager.
             </p>
 
             <h2>Good documentation is organized chronologically</h2>
@@ -67,6 +69,15 @@ export default function ArticlePage() {
               the decision.
             </p>
 
+            <h2>Good documentation tracks costs, not just conversations</h2>
+
+            <p>
+              A baseline estimate, every change order that follows, and a record
+              of payments received should stay attached to the same timeline as
+              the work itself — not live separately in email threads and
+              spreadsheets that fall out of sync with what actually happened.
+            </p>
+
             <h2>Good documentation preserves communication history</h2>
 
             <p>
@@ -92,9 +103,11 @@ export default function ArticlePage() {
             </p>
 
             <p>
-              Leeward helps teams maintain timelines, daily logs, project updates,
-              photo documentation, approvals, communication records, and exportable
-              project history in one organized place.
+              Leeward helps contractors, subcontractors, landlords, and property
+              managers maintain timelines, daily logs, project updates, photo
+              documentation, approvals, estimates and change orders, payment
+              tracking, communication records, and exportable project history
+              in one organized place.
             </p>
           </div>
         </div>
