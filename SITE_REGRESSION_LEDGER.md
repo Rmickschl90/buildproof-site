@@ -17,12 +17,69 @@ Current landing page state includes:
 - updated feature hierarchy
 - mobile-friendly screenshot layout
 - operational Get Started flow
+- multi-audience copy (contractors, subcontractors, landlords, property
+  managers), Record-first language throughout
+- separate Estimates/Change Orders and Client Invoices sections, each with
+  real, verified-correct product screenshots (2026-07-29)
 
 This is considered current safe landing-page baseline.
 
 ---
 
 # MAJOR SITE CHANGES
+
+## Records/Multi-Audience Copy Broadening + Estimate/Invoice Section Split + Real Screenshots (2026-07-29)
+
+Deployed to production (`getleeward.com`) via `vercel --prod` from
+`marketing-site-overhaul-2026-07` (commit `5bedb7c`), aliased successfully,
+confirmed live via direct fetch of the production URL immediately
+afterward (not just trusting the CLI's "Ready" output).
+
+Copy broadened across the whole homepage to stop reading as
+contractor-only: hero support line now lists contractors, subcontractors,
+landlords, property managers, and "anyone else who needs a clear record of
+what happened" directly, rather than a "just as useful for..." aside.
+Removed the "No card charged until it ends" trial line from the hero per
+Ryan's call. All ~13 feature cards, the pricing captions, the Team
+Accounts callout, and the Android-availability section were reworded the
+same way (Record-first language, multiple audiences named explicitly),
+consistent with the in-app Project→Record rename done earlier this week.
+
+Real screenshots replaced placeholder/mismatched ones:
+- `shared-timeline-view-v2.jpg` — genuine read-only client-facing
+  `/share/{token}` timeline (previously this section only had an invoice
+  screenshot, which was the wrong image for a section about read-only
+  timeline sharing).
+- `log-payment-dark.jpg` — genuine Log Payment dialog screenshot, added
+  alongside the existing Estimate tab screenshot.
+- `client-invoice-view-v2.jpg` — corrected invoice screenshot. The
+  original `client-invoice-view.jpg` showed a logically-impossible demo
+  state (an unapproved/pending Original Estimate coexisting with an
+  approved change order, on a record whose total looked too low for the
+  scope of work shown) — caught by Ryan reviewing the screenshot before
+  it shipped. Fixed by archiving the bad demo approval and recreating a
+  correct one on a clean record (Sunset Deck Rebuild: $8,100 approved
+  Original Estimate + $4,700 approved Additional Charge = $12,800 total,
+  correct chronological order). Note: `client-invoice-view.jpg` (the old,
+  broken file) could not be overwritten in place in the working
+  environment used to build this, so the new file was written under a
+  `-v2` filename and `page.tsx`'s reference was repointed instead — the
+  old file is still sitting unused in `public/`, harmless but not worth
+  cleaning up urgently.
+
+Also split what used to be a single "Estimates, change orders & invoices"
+section into two: "Estimates & change orders" (estimate tab + Log Payment
+screenshots) and a new standalone "Client invoices" section (invoice
+screenshot alone) — Ryan's call, since invoices are a distinct enough
+concept from estimates/change orders to deserve their own section rather
+than being visually paired only with the estimate tab.
+
+Verified live on production via direct fetch of `getleeward.com` after
+deploy (not just the Vercel CLI's success output) — confirmed all new
+copy and all three new image references render correctly in the actual
+served HTML.
+
+---
 
 ## Stripe Success / Cancel Pages Added
 

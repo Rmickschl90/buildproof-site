@@ -555,6 +555,22 @@ export default function Home() {
                 Individual
               </p>
 
+              <span
+                style={{
+                  display: "inline-block",
+                  marginTop: "14px",
+                  padding: "6px 14px",
+                  borderRadius: "999px",
+                  background: "#ecfdf5",
+                  color: "#047857",
+                  fontSize: "13px",
+                  fontWeight: 700,
+                  letterSpacing: "-0.01em",
+                }}
+              >
+                Try free for 30 days
+              </span>
+
               <div
                 style={{
                   marginTop: "16px",
@@ -650,6 +666,22 @@ export default function Home() {
               >
                 Team
               </p>
+
+              <span
+                style={{
+                  display: "inline-block",
+                  marginTop: "14px",
+                  padding: "6px 14px",
+                  borderRadius: "999px",
+                  background: "#ecfdf5",
+                  color: "#047857",
+                  fontSize: "13px",
+                  fontWeight: 700,
+                  letterSpacing: "-0.01em",
+                }}
+              >
+                Try free for 30 days
+              </span>
 
               <div
                 style={{

@@ -19,35 +19,46 @@ This handoff tracks:
 
 # Product Positioning (LOCKED DIRECTION)
 
-Primary positioning direction:
+**Updated 2026-07-29** — the two locked headlines below were rewritten as
+part of the Record rename + multi-audience broadening pass and are now
+STALE. Current live copy (see `app/page.tsx`, deployed to
+`getleeward.com`):
 
-"Structured project communication with shareable timelines and dispute-ready exports."
+Primary positioning direction (current):
 
-Supporting positioning:
+"Clear records when accountability matters most."
 
-"Clear project history when accountability matters most."
+Supporting hero line (current):
+
+"Built for contractors, subcontractors, landlords, property managers, and
+anyone else who needs a clear record of what happened."
+
+This replaces the two "LOCKED" strings previously below (now historical
+only, kept for reference):
+- ~~"Structured project communication with shareable timelines and
+  dispute-ready exports."~~
+- ~~"Clear project history when accountability matters most."~~
 
 Additional messaging direction:
-- structured project communication
+- clear records / record history
 - dispute-ready documentation
-- chronological project records
+- chronological record history
 - accountability
-- professional client communication
+- professional client/tenant/owner communication
 - frozen snapshots
-- shareable timelines
+- shareable read-only timelines
 - offline documentation
 
 IMPORTANT:
-The product intentionally moved away from overusing:
-- "for contractors"
-- niche construction-only language
-
-while still naturally appealing to contractors through:
-- screenshots
-- workflows
-- approvals
-- exports
-- documentation flow
+The product intentionally moved beyond contractor-only framing. Unlike the
+earlier direction (which avoided naming other audiences directly and
+relied on contractors self-recognizing through screenshots/workflows),
+copy now explicitly names contractors, subcontractors, landlords, and
+property managers side by side wherever the product's audience is
+described — this was an explicit correction after Ryan flagged that the
+implicit approach left non-contractor audiences (landlords, property
+managers) essentially invisible in the copy despite the product being
+positioned for them too.
 
 The broader positioning direction is intentional.
 
@@ -319,6 +330,18 @@ Landing site now includes:
 
 This is considered:
 V1 launch-ready marketing infrastructure.
+
+**2026-07-29 update**: full copy + screenshot refresh deployed to
+production, closing out the long-deferred "review/update marketing site"
+follow-up from the in-app Record rename / Estimate-Invoice-Payments-
+Documents / dark mode work. Copy now reflects every feature shipped since
+the original launch copy was written (Estimates & Change Orders, Payment
+Tracking, Reference Document Vault, Team Accounts) and explicitly speaks
+to landlords/property managers, not just contractors. All screenshots
+verified to be real, current, and logically correct (see
+`SITE_REGRESSION_LEDGER.md` entry of the same date for the invoice-data
+bug that was caught and fixed before shipping). See "Product Positioning"
+above for the two rewritten locked headlines.
 
 ---
 
