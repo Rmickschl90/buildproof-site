@@ -1,5 +1,13 @@
 import "./landing.css";
 
+// --- iOS App Store launch toggle ------------------------------------------
+// Set this to the real App Store URL the moment Apple approves the app,
+// then redeploy. Leave it null until then. This single value controls
+// whether the App Store badge, eyebrow copy, and download-section body
+// copy below mention iPhone/App Store availability.
+// Example once approved: "https://apps.apple.com/us/app/leeward/id1234567890"
+const IOS_APP_STORE_URL: string | null = null;
+
 export default function Home() {
   return (
     <main className="bp-page">
@@ -783,7 +791,9 @@ export default function Home() {
               className="bp-eyebrow"
               style={{ color: "#cbd5e1" }}
             >
-              Available on Android
+              {IOS_APP_STORE_URL
+                ? "Available on Android and iPhone"
+                : "Available on Android"}
             </p>
 
             <h2 style={{ color: "white", marginBottom: "18px" }}>
@@ -799,11 +809,9 @@ export default function Home() {
                 margin: "0 auto",
               }}
             >
-              Start in your browser or install Leeward on your Android device from
-              Google Play. iPhone users can access Leeward through the web while App
-              Store distribution is being prepared. Built for contractors,
-              subcontractors, and property managers who need a clear record
-              of work performed.
+              {IOS_APP_STORE_URL
+                ? "Install Leeward on your Android device from Google Play or your iPhone from the App Store — or start right away in your browser. Built for contractors, subcontractors, and property managers who need a clear record of work performed."
+                : "Start in your browser or install Leeward on your Android device from Google Play. iPhone users can access Leeward through the web while App Store distribution is being prepared. Built for contractors, subcontractors, and property managers who need a clear record of work performed."}
             </p>
 
             <div
@@ -832,6 +840,26 @@ export default function Home() {
                   }}
                 />
               </a>
+
+              {IOS_APP_STORE_URL && (
+                <a
+                  href={IOS_APP_STORE_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Download Leeward on the App Store"
+                  style={{ display: "inline-flex" }}
+                >
+                  <img
+                    src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83"
+                    alt="Download on the App Store"
+                    style={{
+                      height: "72px",
+                      width: "auto",
+                      display: "block",
+                    }}
+                  />
+                </a>
+              )}
             </div>
 
             <p

@@ -2,6 +2,62 @@
 
 ---
 
+## iOS App Store Badge — Prepped, Gated, Not Yet Live (2026-08-20)
+
+Ryan asked to get the marketing site ready for iOS App Store approval
+ahead of time, so the site can be updated within minutes of Apple
+approving the app (currently build 12, resubmitted 2026-08-18, awaiting
+review — see the buildproof repo's own CLAUDE.md "iOS Camera Crash on
+Take Photo + App Store Guideline 2.1 Reply" entry for that status).
+
+Branch `ios-app-store-badge-prep` (commit `db28370`), off
+`marketing-site-overhaul-2026-07`. Single file changed: `app/page.tsx`.
+
+Added one toggle constant near the top of the file:
+
+```
+const IOS_APP_STORE_URL: string | null = null;
+```
+
+While `null`, the site behaves exactly as it does today — Google Play
+badge only, "iPhone users can access Leeward through the web while App
+Store distribution is being prepared" copy in the availability section.
+The moment Apple approves and a real App Store URL exists, set this one
+constant to that URL and redeploy. That single change flips:
+- the eyebrow line ("Available on Android" → "Available on Android and
+  iPhone")
+- the availability-section body copy (drops the "being prepared"
+  language, mentions installing from the App Store)
+- adds the official Apple "Download on the App Store" badge
+  (`tools.applemediaservices.com` badge API, matching the existing
+  Google Play badge's size/style) next to the Google Play badge
+
+No other copy, layout, or file was touched. Verified via `tsc --noEmit`
+and `npx eslint app/page.tsx` (both clean aside from pre-existing
+warnings already present elsewhere in the file) — `next build` itself
+could not run in this session's sandbox (missing SWC binary for
+linux/x64, an environment limitation unrelated to this change, not a
+real build failure). Diff reviewed directly (`git diff --stat`) to
+confirm it touched only the intended 34 insertions / 6 deletions in
+`app/page.tsx`, with no other pre-existing uncommitted local changes in
+this repo swept in.
+
+Pushed to GitHub by Ryan directly (this session's sandbox has no network
+egress to github.com — pushes/PR creation had to happen from Ryan's own
+machine/browser). PR into `marketing-site-overhaul-2026-07` not yet
+opened as of this writing — compare view confirmed "Able to merge,"
+just needs Ryan (or a future session, once he's signed into GitHub in
+the working browser) to click through and open it. Safe to merge
+anytime before Apple approves, since the feature is fully inert until
+`IOS_APP_STORE_URL` is set.
+
+**Next step once Apple approves:** get the real App Store URL, set
+`IOS_APP_STORE_URL` in `app/page.tsx`, redeploy to production, verify
+live via direct fetch of `getleeward.com` (per this repo's own
+verification convention).
+
+---
+
 # CURRENT SAFE STATE
 
 Current landing page state includes:
