@@ -60,7 +60,7 @@ export default function Home() {
 
           <div className="bp-actions">
             <a
-              href="https://app.getleeward.com/login"
+              href="#download"
               style={{
                 display: "inline-flex",
                 alignItems: "center",
@@ -630,7 +630,7 @@ export default function Home() {
 
               <a
                 className="bp-primary"
-                href="https://app.getleeward.com/login"
+                href="#download"
                 style={{
                   marginTop: "40px",
                   width: "100%",
@@ -740,7 +740,7 @@ export default function Home() {
 
               <a
                 className="bp-primary"
-                href="https://app.getleeward.com/login"
+                href="#download"
                 style={{
                   marginTop: "40px",
                   width: "100%",
@@ -776,7 +776,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bp-section">
+      <section id="download" className="bp-section">
         <div className="bp-container">
           <div
             style={{
@@ -870,7 +870,14 @@ export default function Home() {
                 fontSize: "14px",
               }}
             >
-              Web access is available at app.getleeward.com.
+              Web access is available at{" "}
+              <a
+                href="https://app.getleeward.com/login"
+                style={{ color: "#94a3b8", textDecoration: "underline" }}
+              >
+                app.getleeward.com
+              </a>
+              .
             </p>
           </div>
         </div>
