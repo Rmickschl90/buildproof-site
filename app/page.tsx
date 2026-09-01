@@ -6,7 +6,8 @@ import "./landing.css";
 // whether the App Store badge, eyebrow copy, and download-section body
 // copy below mention iPhone/App Store availability.
 // Example once approved: "https://apps.apple.com/us/app/leeward/id1234567890"
-const IOS_APP_STORE_URL: string | null = null;
+const IOS_APP_STORE_URL: string | null =
+  "https://apps.apple.com/us/app/leeward-records/id6796795666";
 
 export default function Home() {
   return (
