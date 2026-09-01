@@ -2,6 +2,88 @@
 
 ---
 
+## iOS App Store Badge Live + Get Started Routing + Documents Screenshot Revert (2026-08-31)
+
+Three changes this session, following the buildproof app's App Store
+approval (see `buildproof/CLAUDE.md`'s "App Store Approved" entry for
+the approval story itself — this ledger covers only the site-side
+work).
+
+**1. iOS App Store badge activated.** The `IOS_APP_STORE_URL` toggle
+constant in `app/page.tsx` (added 2026-08-20, see entry below) was
+flipped from `null` to
+`https://apps.apple.com/us/app/leeward-records/id6796795666` — commit
+`2812e01` on `ios-app-store-badge-prep`, merged fast-forward into
+`marketing-site-overhaul-2026-07`. This single change flips the badge,
+eyebrow copy, and availability-section body copy as designed back when
+the toggle was built. Verified live on `getleeward.com` via direct
+fetch post-deploy: Apple "Download on the App Store" badge renders
+next to the Google Play badge, eyebrow reads "Available on Android and
+iPhone."
+
+**2. "Get Started" routing changed.** Commit `9f8ea1e`, directly on
+`marketing-site-overhaul-2026-07`. All 3 "Get Started" button hrefs
+(previously `https://app.getleeward.com/login`, defaulting straight
+into the web app) changed to `#download`, an in-page anchor. Added
+`id="download"` to the section wrapping the Google Play / App Store
+download block, so "Get Started" now scrolls users to a choice of
+install options instead of assuming web. Separately, the plain-text
+"Web access is available at app.getleeward.com" line in that same
+section was converted into a real `<a href="https://app.getleeward.com/login">`
+link, so direct web access remains one click away — just no longer the
+default "Get Started" destination. Verified live via direct fetch and
+in-browser click-through.
+
+**3. Documents-tab screenshot re-crop attempted, reverted.** Ryan
+asked to replace `public/documents-tab-dark.jpg` (used in the
+Documents-tab feature section, paired side-by-side with
+`timeline-photo-dark.jpg`) with a tighter crop that excludes the
+header/logo bar (previously showed the full "Leeward" logo, "Signed in
+as..." line, and Upgrade/Account buttons above the actual Documents
+tab content).
+
+Swapped the file (commit `7d30ddd`, new image 1179×1682px vs. the
+original 1179×2039px — both against the same 1179px-wide source
+screenshot, just cropped differently). Ryan reported the live result
+looked "rough" / "stretched." Investigated via direct DOM measurement
+on the live page rather than guessing:
+
+```js
+// naturalWidth/naturalHeight vs getBoundingClientRect() on both <img> tags
+documents: rendered 280.0x399.5, natural 1179x1682, naturalAspect=0.701, renderedAspect=0.701
+timeline:  rendered 280.0x540.7, natural 1178x2275, naturalAspect=0.518, renderedAspect=0.518
+```
+
+Confirmed rendered aspect ratio exactly matches natural aspect ratio
+for both images — **not** a CSS stretching bug (`height: "auto"` in
+the inline style was working correctly, and the flex container's
+default `align-items` was not distorting either image). The real issue
+is that the new crop is a genuinely squatter/wider-aspect screenshot
+(0.701) than its paired image (0.518), so at the same fixed 280px
+display width it renders visibly shorter, and the same on-screen
+content reads as proportionally "wider"/"stretched" relative to the
+smaller frame.
+
+Tried padding the new crop with solid-color fill (sampled from the
+image's own background, `rgb(10,13,19)`) at the top to force-match
+`timeline-photo-dark.jpg`'s height (2275px, +593px of padding) without
+reintroducing the header. Rendered and visually inspected before
+deploying — this looked distinctly worse: a large empty dark void
+floating above the card, not a plausible phone-mockup, so this
+approach was abandoned without being committed.
+
+Reverted to the original with-header image (commit `ff3a715`, restored
+via `git show 1c331ef:public/documents-tab-dark.jpg`, confirmed byte-
+identical dimensions 1179×2039 to the pre-session version). Net result:
+this section is visually unchanged from before this session — two real
+commits were made and one reverted, but nothing shipped differently.
+If a shorter/cropped Documents-tab screenshot is wanted in the future,
+the real fix is a screenshot with more actual content (e.g. 2-3
+documents listed) to naturally reach a taller, better-matched aspect
+ratio — not padding.
+
+---
+
 ## iOS App Store Badge — Prepped, Gated, Not Yet Live (2026-08-20)
 
 Ryan asked to get the marketing site ready for iOS App Store approval
